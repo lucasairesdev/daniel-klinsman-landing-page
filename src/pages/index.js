@@ -2,8 +2,12 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import YoutubeVideo from '@/components/player'
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
+
 
 const inter = Inter({ subsets: ['latin'] })
+
+
 
 export default function Home() {
   const [screenHeight, setScreenHeight] = useState(0);
@@ -17,11 +21,21 @@ export default function Home() {
   }, []);
   return (
     <main className='bg-black'>
-      <div className='flex justify-center items-center'>
-        <h1 className='flex text-red-600 text-9xl p-4'>ZERO</h1>
-        <h2 className='absolute text-white text-5xl'>SAINDO DO</h2>
+      <div>
+        <Head>
+          <title>Saindo do ZERO</title>
+          <meta
+            name="description"
+            content="Construa sua liberdade financeira e geográfica!"
+          />
+        </Head>
       </div>
-      
+
+      <div className='flex justify-center items-center'>
+        <h1 className='flex text-red-700 text-6xl md:text-8xl p-4 font'>ZERO</h1>
+        <h2 className='absolute text-white text-xl md:text-4xl'>SAINDO DO</h2>
+      </div>
+
       <div className='flex justify-center items-center flex-col font-bold mb-8'>
         <p>Construa sua liberdade financeira e geográfica!</p>
         <p>Única coisa que cai do céu é chuva</p>
@@ -32,8 +46,11 @@ export default function Home() {
       </div>
 
       <div className='flex justify-center items-center flex-col font-bold m-4 p-4'>
-        <p>Vagas limitadas, depois que acabarem não venham</p>
-        <p>dizer que eu não avisei! CLICK no link ABAIXO!</p>
+        <span className='flex items-center justify-center mb-2'>
+          Vagas limitadas, depois que acabarem não venham
+          dizer que eu não avisei!
+        </span>
+        CLICK no link ABAIXO!
       </div>
 
       <div className="flex w-full items-center animate-bounce mt-4 justify-center">
@@ -47,59 +64,59 @@ export default function Home() {
         <p>Depoimento dos meus alunos</p>
       </div>
       <div className='flex w-full justify-center items-center'>
-        <div className='flex mb-8 overflow-x-auto w-[600px] gap-5'>
+        <div className='flex mb-8 overflow-x-auto md:w-[600px] h-[250px] gap-3 m-2'>
           <Image
             src="/whatsapp1.jpg"
-            height={400}
-            width={400}
+            height={600}
+            width={1000}
             alt='whatsapp-image1'
           />
 
           <Image
             src="/whatsapp2.jpg"
-            height={400}
-            width={400}
+            height={600}
+            width={1000}
             alt='whatsapp-image2'
           />
 
           <Image
             src="/whatsapp2.jpg"
-            height={400}
-            width={400}
+            height={600}
+            width={1000}
             alt='whatsapp-image2'
           />
           <Image
             src="/whatsapp2.jpg"
-            height={400}
-            width={400}
+            height={600}
+            width={1000}
             alt='whatsapp-image2'
           />
           <Image
             src="/whatsapp2.jpg"
-            height={400}
-            width={400}
+            height={600}
+            width={1000}
             alt='whatsapp-image2'
           />
           <Image
             src="/whatsapp2.jpg"
-            height={400}
-            width={400}
+            height={600}
+            width={1000}
             alt='whatsapp-image2'
           />
         </div>
       </div>
-      
+
       <div className='flex justify-center items-center'>
-      <Image
-            src="/apresentacao-daniel.jpg"
-            height={400}
-            width={400}
-            alt='whatsapp-image2'
-          />
+        <Image
+          src="/apresentacao-daniel.jpg"
+          height={400}
+          width={400}
+          alt='whatsapp-image2'
+        />
       </div>
 
       <div className='flex justify-center items-center flex-col font-bold mb-8 mt-1 text-yellow-500 text-xl'>
-        <p>Prazer, Daniel Klinsmann</p>
+        <p>Prazer, Daniel Klinsman</p>
       </div>
 
       {/* <div className='flex justify-center items-center flex-col font-bold'> */}
@@ -141,26 +158,28 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col gap-5 justify-center items-center m-4 font-bold'>
-        <span className=''>
+        <span className='flex items-center justify-center md:w-2/4'>
           <p>
             Saindo de zero é um curso que tem como objetivo  ajudar pessoas a obterem resultados financeiros utilizando o
-            poder da internet através de cursos digitais. 
-            </p>
-            <span>
-              <p>
+            poder da internet através de cursos digitais.
+          </p>
+        </span>
+        <span className='flex items-center justify-center md:w-2/4'>
+          <p>
             Não reivindicamos ou declaramos que ao usar o método, você ganhará
             dinheiro ou recuperará seu dinheiro.
-            </p>
-            </span>
-            <span>
-              <p>
-             Os depoimentos mostrados são negócios e vão variar com base no seu
+          </p>
+        </span>
+
+        <span className='flex items-center justify-center md:w-2/4'>
+          <p>
+            Os depoimentos mostrados são negócios e vão variar com base no seu
             esforço, no conhecimento que você adquirir e nas forças do mercado que estão além do controle de qualquer
             pessoa.
-            </p>
-            </span>
-          
+          </p>
         </span>
+
+
       </div>
 
       <div className='flex'>
