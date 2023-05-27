@@ -35,3 +35,7 @@ h2{
   -webkit-text-stroke-color: red;
   color: red;
 }
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}

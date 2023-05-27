@@ -62,13 +62,12 @@ export default function Home() {
         <p>Depoimento dos meus alunos</p>
       </div>
       <div className="flex w-full justify-center items-center">
-        <div className="flex mb-8 overflow-x-auto md:w-[600px] h-[400px] gap-3 m-2">
+        <div className="flex mb-8 overflow-x-scroll md:w-2/4 h-[400px] gap-3 m-2 ">
           <Image
             src="/whatsapp1.jpg"
-            height={600}
+            height={800}
             width={1000}
             alt="whatsapp-image1"
-            className="sm:scale-125 md:scale-150"
           />
 
           <Image
@@ -76,7 +75,6 @@ export default function Home() {
             height={800}
             width={1000}
             alt="whatsapp-image2"
-            className="sm:scale-125 md:scale-150"
           />
 
           <Image
@@ -84,28 +82,24 @@ export default function Home() {
             height={800}
             width={1000}
             alt="whatsapp-image2"
-            className="sm:scale-125 md:scale-150"
           />
           <Image
             src="/whatsapp2.jpg"
             height={800}
             width={1000}
             alt="whatsapp-image2"
-            className="sm:scale-125 md:scale-150"
           />
           <Image
             src="/whatsapp2.jpg"
             height={800}
             width={1000}
             alt="whatsapp-image2"
-            className="sm:scale-125 md:scale-150"
           />
           <Image
             src="/whatsapp2.jpg"
             height={800}
             width={1000}
             alt="whatsapp-image2"
-            className="sm:scale-125 md:scale-150"
           />
         </div>
       </div>
@@ -168,20 +162,6 @@ export default function Home() {
           <p>
             Saindo de zero é um curso que tem como objetivo ajudar pessoas a
             obterem resultados financeiros utilizando o poder da internet
-            através de cursos digitais.
-          </p>
-        </span>
-        <span className="flex items-center justify-center md:w-2/4">
-          <p>
-            Não reivindicamos ou declaramos que ao usar o método, você ganhará
-            dinheiro ou recuperará seu dinheiro.
-          </p>
-        </span>
-
-        <span className="flex items-center justify-center md:w-2/4">
-          <p>
-            Saindo de zero é um curso que tem como objetivo ajudar pessoas a
-            obterem resultados financeiros utilizando o poder da internet
             através de cursos digitais. Os depoimentos mostrados são negócios e
             vão variar com base no seu esforço, no conhecimento que você
             adquirir e nas forças do mercado que estão além do controle de
@@ -190,11 +170,8 @@ export default function Home() {
         </span>
       </div>
 
-      <div className="flex">
-        <footer className="flex justify-start items-start ml-5">
-          Políticas de privacidade
-        </footer>
-        <footer className="flex justify-end items-end ml-auto pr-6">
+      <div className="flex justify-center items-center">
+        <footer className="flex justify-center items-center ">
           Políticas de privacidade
         </footer>
       </div>
