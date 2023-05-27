@@ -29,3 +29,9 @@ h2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Times, serif;
 }
 
+.outline-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: red;
+  color: red;
+}
