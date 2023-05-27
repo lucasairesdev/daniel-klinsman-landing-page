@@ -18,44 +18,56 @@ export default function Home() {
   }, []);
   return (
     <main className="bg-black">
-      <div>
-        <Head>
-          <title>Saindo do ZERO</title>
-          <meta
-            name="description"
-            content="Construa sua liberdade financeira e geográfica!"
-          />
-        </Head>
-      </div>
+      <Head>
+        <title>Saindo do ZERO</title>
+        <meta
+          name="description"
+          content="Construa sua liberdade financeira e geográfica!"
+        />
+      </Head>
 
-      <div className="flex justify-center items-center">
-        <h1 className="flex text-red-700 text-6xl md:text-9xl p-4 outline-text ">
-          <span className="outline-text">ZERO</span>
-        </h1>
-        <h2 className="absolute text-white text-2xl md:text-4xl">SAINDO DO</h2>
-      </div>
+      <div className="relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/background-daniel.jpeg"
+            alt="Imagem de plano de fundo"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            className="opacity-10"          />
+        </div>
 
-      <div className="flex justify-center items-center flex-col font-bold mb-8">
-        <p>Construa sua liberdade financeira e geográfica!</p>
-        <p>Única coisa que cai do céu é chuva</p>
-      </div>
+        <div className="flex justify-center items-center z-10 relative">
+          <h1 className="flex text-red-700 text-6xl md:text-9xl p-4 outline-text ">
+            <span className="outline-text">ZERO</span>
+          </h1>
+          <h2 className="absolute text-white text-2xl md:text-4xl">
+            SAINDO DO
+          </h2>
+        </div>
 
-      <div className="bg-black flex justify-center items-center">
-        <YoutubeVideo width={width} />
-      </div>
+        <div className="flex justify-center items-center flex-col font-bold mb-8  z-10 relative">
+          <p>Construa sua liberdade financeira e geográfica!</p>
+          <p>Única coisa que cai do céu é chuva</p>
+        </div>
 
-      <div className="flex justify-center items-center flex-col font-bold m-4 p-4">
-        <span className="flex items-center justify-center mb-2">
-          Vagas limitadas, depois que acabarem não venham dizer que eu não
-          avisei!
-        </span>
-        CLICK no link ABAIXO!
-      </div>
+        <div className=" flex justify-center items-center  z-10 relative">
+          <YoutubeVideo width={width} />
+        </div>
 
-      <div className="flex w-full items-center animate-bounce mt-4 justify-center">
-        <button className="bg-orange-500 text-black mx-auto rounded-full px-2 py-1 text-xl font-bold p-4 m-4 ">
-          Clique Aqui
-        </button>
+        <div className="flex justify-center items-center flex-col font-bold m-4 p-4  z-10 relative">
+          <span className="flex items-center justify-center mb-2">
+            Vagas limitadas, depois que acabarem não venham dizer que eu não
+            avisei!
+          </span>
+          CLICK no link ABAIXO!
+        </div>
+
+        <div className="flex w-full items-center animate-bounce mt-4 justify-center  z-10 relative">
+          <button className="bg-orange-500 text-black mx-auto rounded-full px-2 py-1 text-xl font-bold p-4 m-4 ">
+            Clique Aqui
+          </button>
+        </div>
       </div>
 
       <div className="flex justify-center items-center flex-col font-bold m-2 p-2">
