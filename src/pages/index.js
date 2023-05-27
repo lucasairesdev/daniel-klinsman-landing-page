@@ -34,7 +34,7 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            className="opacity-10"          />
+            className="opacity-20"          />
         </div>
 
         <div className="flex justify-center items-center z-10 relative">
