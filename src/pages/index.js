@@ -34,7 +34,8 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            className="opacity-20"          />
+            className="opacity-20"
+          />
         </div>
 
         <div className="flex justify-center items-center z-10 relative">
@@ -163,9 +164,20 @@ export default function Home() {
 
       <div className="flex justify-center items-center bg-white text-black text-xl font-bold">
         <ul>
-          <li className="mt-4 mb-6">1- Quais as formas de pagamento?</li>
-          <li className="mb-6">2- Como terei acesso as aulas?</li>
-          <li className="mb-6">3- Como posso tirar minhas dúvidas?</li>
+          <li className="mt-4 ">1- Quais as formas de pagamento?</li>
+          <li className="mb-4 font-normal text-sm">
+            Pix, cartão ou boleto bancário
+          </li>
+          <li className="">2- Como terei acesso as aulas?</li>
+          <li className="mb-4 font-normal text-sm">
+            O link de acesso será enviado ao e-mail informado após a confirmação
+            do pagamento
+          </li>
+          <li className="">3- Como posso tirar minhas dúvidas?</li>
+          <li className="mb-4 font-normal text-sm">
+            Prestarei todo suporte através dos meus canais de comunicação e
+            redes sociais
+          </li>
         </ul>
       </div>
 
